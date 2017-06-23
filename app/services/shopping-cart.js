@@ -8,5 +8,8 @@ export default Ember.Service.extend({
   },
   remove(product) {
     this.get('products').removeObject(product);
+  },
+  empty() {
+    this.get('products').clear()
   }
 });
